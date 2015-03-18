@@ -1,0 +1,9 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:dbname=db_name;host=localhost'
+      username: db_username
+      password: db_password
+      attributes:
+        quote_identifier: true
