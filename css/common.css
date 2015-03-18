@@ -1,0 +1,369 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {margin: 10px 0; padding-left: 2.5em;}
+ol {margin: 10px 0; padding-left: 2.5em;}
+blockquote {margin: 10px 0; padding-left: 2.5em; background:  url(../images/blockquote_bg.png) repeat-y; font-style: italic;}
+a img {border: none;}
+table, td {border-collapse: collapse;}
+th {text-align: left;}
+
+.radio_list, .checkbox_list{margin: 0px; padding: 0px; list-style:none;}
+
+.defatul_textarea{width:100%}
+
+body {
+ 	margin: 0;
+	font-size: 12px;
+	font-family:  Arial, Helvetica, Sans-Serif;
+	color: #000;
+}
+
+#pageContainer {
+  width: 100%;
+  margin: auto;
+  min-width: 1000px;
+  text-align: left;
+}
+
+#footerContainer {
+  width: 97%;
+  min-width: 1000px;
+  height: 60px;
+	clear: both;
+	padding: 0;
+  text-align: right;
+	font-size: 11px;
+}
+
+
+.actionIcon{margin-right: 5px;}
+
+.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+.editor {min-width: 620px; min-height: 150px;}
+.nicEdit-main {background: white;  max-height: 400px; overflow: auto;}
+.nicEdit-main:focus{  outline: 0px;}
+.nicEdit-panelContain { background: url(../js/nicEdit/bg.png) }
+.nicEdit-buttonContain {margin-right: 5px;}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+#ui-datepicker-div {font-size: 11px;}
+.datepicker{ width: 80px;}
+
+.checkbox_list_inline li {float:left; display:inline; margin-right: 10px;}
+
+/*navigation menu core css*/
+
+#navigationMenu, .navigationMenu, #navigationMenu .navigationMenu li { margin:0px; padding:0px; }
+#navigationMenu li {float:left; display:inline; cursor:pointer; list-style:none; padding:0; position:relative;  }
+#navigationMenu li ul.first {left:-1px; top:100%; min-width: 100px;}
+
+#navigationMenu .navigationMenu li { width:100%;  }
+#navigationMenu li a {display:block; width:inherit; height:inherit;}
+
+ul.navigationMenu { display:none; }
+li:hover > .navigationMenu { display:block; position:absolute; width:auto; top:-2px; left:99%; z-index:1000;  }
+ul.navigationMenu li:hover { position:relative; z-index:2000; }
+
+.menuArrowBottom { background: url(../images/icons/arrow_bottom.gif) right center no-repeat;padding-right: 10px;}
+.menuArrowRight { background: url(../images/icons/arrow_right.gif) right center no-repeat;padding-right: 10px;}
+
+#userNoticesBox { margin: 7px 0; }
+.userNoticesInfo { background: #d1eed1; padding: 3px 10px; border: 1px solid #bfe7bf; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.userNoticesWarning { background: #fdf5d9; padding: 3px 10px; border: 1px solid #fceec1; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.userNoticesError { background: #fddfde; padding: 3px 10px; border: 1px solid #fbc7c6; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+
+
+/*default css for modalbox*/
+
+#modalBoxHeader { position:absolute; top:0px; left:0;text-align:right;width:100%; background: transparent; cursor: pointer }
+div.closeModalBoxButton { height: 24px;width: 24px;background: black;float: right;background: url(../images/icons/window-close.png) no-repeat;}
+div.modalBoxBodyContent { padding: 0px; }
+
+/*modalbox core css*/
+
+.modalboxContent { display:none; }
+.modalgallery { display:block; }
+#modalBoxFaderLayer { display:none; }
+#modalBoxAjaxLoader { background:transparent url(../images/ajax-loader.gif) 50% 40% no-repeat; padding:130px 0 0 0; text-align:center; overflow:hidden;}
+#modalBox { display:none; position:fixed; z-index:0;text-align:left; background-color:transparent;min-width:721px;}
+#modalBoxBody { position:relative;}
+
+#modalBoxBody table {width: auto;}
+.modalBoxBodyContent td, .modalBoxBodyContent th { padding: 2px; vertical-align: top;}
+.modalBoxBodyContent{max-width: 950px; overflow-x:auto}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+#ui-datepicker-div {font-size: 11px;}
+
+/* tables */
+table.tableListing {text-align: left; width: 100%}
+table.tableListing thead tr th, table.tableListing tfoot tr th {white-space: nowrap;}
+table.tableListing tbody td {vertical-align: top; white-space: nowrap;}
+table.tableListing td.heading {white-space: normal;}
+table.tableListing thead tr .header div{ background: url(../images/tableListing/bg.gif) no-repeat right; cursor: pointer; padding-right: 15px;}
+table.tableListing thead tr .headerSortUp div{background-image: url(../images/tableListing/asc.gif);}
+table.tableListing thead tr .headerSortDown div{background-image: url(../images/tableListing/desc.gif);}
+table.tableListing.withoutPadding tbody td {padding: 0 4px; vertical-align: middle;}
+table.tableListing.withoutPadding tbody td table td {border: 0; padding: 0 1px;}
+
+
+
+/* root element for tabs  */
+.tabs {list-style:none;margin:0 !important;padding:0;}
+.tabs li {float:left;text-indent:0;padding:0;margin:0 3px 0 0;list-style-image:none !important; }
+.tabs a {display:block;text-align:left;text-decoration:none;padding:0;margin:0;position:relative;top:1px;}
+.tabs a:active {outline:none;}
+.tabs .current, .tabs .current:hover, .tabs li.current a {cursor:default !important;  !important;}
+.panes{ }
+.panes .pane {display:none;	}
+
+.background_color_item {padding: 2px 5px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+
+.droptrue { list-style-type: none; margin: 0; padding: 0; margin-right: 10px;  padding: 3px; }
+.droptrue  li {margin: 5px; padding: 5px;  font-size: 11px; background: #f9f9f9; border: 1px solid #cccccc; cursor: pointer; }
+
+.listingDataTable {width: 100%}
+.listingDataTable td {font-size: 11px; padding: 1px 1px;}
+
+.jsPager table td { padding-top: 5px;}
+.jsPager img {cursor: pointer}
+
+.filterPreviewBox { margin: 3px 15px 15px 0;}
+.filterPreviewBox td.selectedFilterItems{color: #6f6f6f; font-size: 11px; padding-top: 4px;}
+
+.tableBorder {border: 1px solid lightGray}
+.tableBorder td {border: 1px solid lightGray}
+.tableBorder th {border: 1px solid lightGray; text-align: left; font-weight: bold;}
+.trHover tr:hover {background: #fcf5dd}
+
+.pointer {cursor:pointer}
+
+#attachmentsList{min-width: 400px;}
+#attachmentsList div {border: 1px dashed LightGray; background: white;  margin:3px; }
+#attachmentsList table td {padding: 3px; vertical-align: top;}
+.attachedFile{display: none}
+
+div.skinsList { width: 700px;overflow: hidden;}
+div.skinsList ul {list-style: none;padding: 0;float: left;}
+div.skinsList ul li {float: left;text-align: center;padding-top: 10px; }
+
+ul.listInfo { list-style-type: none; padding-left: 10px;}
+ul.listInfo li { background: url(../images/icons/arrow.gif) no-repeat 0px 5px; padding-left: 7px;} 
+
+table.resetPadding td {padding: 0;}
+
+.editor-textarea{ width: 1000px; height: 400px; padding: 2px;}
+#wiki_content{ border: 1px solid #aaaaaa; padding: 10px;}
+
+#page_contents {background: #f9f9f9; border: 1px solid #aaaaaa; display: none; padding: 10px 15px 10px 0;}
+#page_contents li {list-style: none; }
+#page_contents ul {margin: 0px; padding-left: 15px;}
+
+#wiki_content h1, h2, h3, h4, h5, h6 {
+  background: none;
+  border-bottom: 1px solid #AAA;
+  color: black;
+  font-weight: normal;
+  margin: 0px;
+  padding-bottom: 0.17em;
+  padding-top: 0.5em;
+}
+
+#wiki_content h1 {font-size: 188%;}
+#wiki_content h2 {font-size: 150%; color: black;}
+#wiki_content h3 {font-size: 132%; font-weight: bold;}
+#wiki_content h4 {font-size: 116%; font-weight: bold;}
+#wiki_content h5 {font-size: 100%; font-weight: bold;}
+#wiki_content h6 {font-size: 80%; font-weight: bold;}
+
+
+#wiki_content pre {
+  background-color: #F9F9F9;
+  border: 1px dashed #2F6FAB;
+  color: black;
+  line-height: 1.1em;
+  padding: 1em;
+  display: block;
+  font-family: monospace;
+  margin: 1em 0px;
+  white-space: pre;
+}
+
+#wiki_menu{ margin: 0px; padding: 0px;}
+
+#wiki_menu ul {
+	list-style: none;
+	margin: 0px; 
+  padding: 0px;
+}
+#wiki_menu li {
+	display: inline;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	padding: 0 0 0 0;
+	margin: 0 .3em 0 0;
+	overflow: visible;
+	background: white;
+}
+
+#wiki_menu li a {
+	background-color: #fff;	
+	border: none;
+	padding: 0 .8em 0;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+	text-decoration: none;
+	line-height: 1.5;
+}
+
+#wiki_search {padding: 7px 0 7px 0;}
+.wiki_description_part {border-bottom: 1px dotted #d3d3d3; padding-bottom: 3px; margin-bottom: 3px; margin-left: 10px;}
+
+#supported_wiki_format_block table td {vertical-align: top;}
+
+.wiki_content_table {margin: 5px;}
+.wiki_content_table td {padding: 2px 5px; border: 1px solid #cfcfcf; } 
+.wiki_content_table th {padding: 2px 5px; border: 1px solid #cfcfcf; background: #e5e5e5;}
+
+#patternsContainer .yuimenubaritemlabel {color: #808080; padding-left: 0px;}
+.tip_text {color: #808080; font-size:11px;}
+
+.doctrine_pager {padding-top: 10px;}
+
+fieldset {border: 1px solid #ababac; padding: 5px;}
+fieldset legend { margin: 0 5px; padding: 0 3px; border: 1px solid #ababac;}
+
+h1 img {vertical-align: middle; cursor:pointer;}
+
+.schedulerTable { width: 100%; margin-top: 10px; }
+.schedulerTable th { background: #ececec; border: 1px dotted #586a7e; padding: 3px; font-size: 11px;}
+.schedulerTable td { height: 125px; width: 14%; background: #fff; border: 1px dotted #586a7e; padding: 0px; font-size: 11px; vertical-align: top;}
+.schedulerTable .inactiveDay { background: #f5f5f5}
+.schedulerTable .schedulerDayHeading { background: #ebeff4; padding: 3px; cursor: pointer;}
+.schedulerTable .schedulerWeekendHeading { background: #f5f5f5; padding: 3px; cursor: pointer;}
+.schedulerTable .schedulerCurrentDayHeading { background: #d1def4; padding: 3px;  cursor: pointer;}
+.schedulerTable .schedulerDayHeading:hover { background: #d1def4;}
+.schedulerTable .schedulerWeekendHeading:hover { background: #d1def4;}
+
+.schedulerTable .schedulerCurrentDay { background: #e2edff; }
+.schedulerTable .eventItem { color: #887a2e; padding: 2px;   cursor: pointer; border-bottom: 1px dotted #c8c8c8;}
+.schedulerTable .eventItem:hover { background: #ececec;}
+
+.schedulerFilterBar{ margin-top: 10px;}
+
+.whiteText {color: white;}
+.whiteText a {color: white;}
+
+table.dataListTable { margin-top: 10px; width: 100%;}
+table.dataListTable th {border: 1px solid #dadfe0; padding: 2px; background: #f2f4f4;}
+table.dataListTable td {border: 1px solid #dadfe0; padding: 2px;}
+table.dataListTable tr:hover {background: #f2f4f4}
+
+table.dataInfoTable {margin-top: 5px;}
+table.dataInfoTable td { vertical-align: top; padding-right: 20px;}
+
+ol.sortable, ol.sortable ol {
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+  width: 450px;
+}
+
+ol.sortable {
+	margin: 15px 0;
+}
+
+.sortable li {
+	margin: 7px 0 0 0;
+	padding: 0;
+}
+
+.sortable li div  {
+	border: 1px solid #dddddd;
+	padding: 3px;
+	margin: 0;
+	cursor: move;
+}
+
+.placeholder {
+	background-color: #fcf5dd;
+}
+
+.ui-nestedSortable-error {
+	background:#fbe3e4;
+	color:#8a1f11;
+}
+
+.hiddenRow{
+  display:none;
+}
+
+.hiddenItem{ display:none; }
+
+.tasksTreePlus {cursor:pointer;}
+
+#extraFieldsInDescription {margin-top: 15px;}
+#extraFieldsInDescription .fieldHeading{font-weight: bold;}
+#extraFieldsInDescription .fieldDescription{margin-bottom: 7px;}
+
+.email_body{ display:none; }
+
+.contentTable pre, .tableListing pre, .nicEdit-main pre { max-width: 450px; max-height: 200px; background: white; overflow: auto; border: 1px dotted gray; padding: 5px; margin: 5px;}
+
+.error_list{
+  color: red;
+  padding:0;
+  margin: 0;
+  list-style:none; 
+}
+
+#tasksTimer {margin: 5px; padding: 3px; border: 1px solid #dadfe0; background: #f2f2f2;-moz-border-radius: 5px; border-radius: 5px;}
+#tasksTimer table td {padding-right: 7px; vertical-align: middle;}
+
+.menuContainer{min-width: 1000px;}
+.yuimenuselecteditem a {font-weight: bold;}
+
+input[type=text],input[type=password],textarea, select { border: 1px solid #abadb3;}
+input[type=text],input[type=password] {padding-left: 3px;}
+select {height: 20px;}
+.checkboxesList{ background: white; border: 1px solid #abadb3; padding: 1px 3px; width: auto; min-width: 200px; max-height: 145px; overflow: hidden; overflow-y: auto; display: inline-block;}
+
+/*#filtersMenuBox,#orderByMenuBox,#searchMenuBox,#viewTypeBox{ border: 1px solid #cccccc;  background: url(img/bg.png) left top repeat-x; }
+#orderByMenuBox,#viewTypeBox {padding-right: 5px;}*/
+#itemDetailsBox .form_tab {font-weight: bold; padding-top: 7px;}
+
+.import_spreadsheet_table {background: white;}
+.import_spreadsheet_table td {padding: 2px; vertical-align: top; border: 1px solid #dddddd;}
+.import_spreadsheet_table th {font-weight: normal; text-align: left; white-space: nowrap; padding: 5px; vertical-align: top;  border: 1px solid #dddddd; background: #f3f3f3}
+
+/*#yuiChoicesMenuContainer .yuimenubaritemlabel-hassubmenu{background-position: center}*/
+#yuiChoicesMenuContainer  .yuimenubar {background: #efefef; height: 18px; border-left: 1px solid #abadb3; border-top: 1px solid #abadb3; border-bottom: 1px solid #abadb3; line-height: 1.7; }
+#yuiChoicesMenuContainer .yuimenubaritem-selected { background: #d8d8d8; }
+#yuiChoicesMenuContainer .yuimenubaritemlabel {padding-right: 10px;}
+
+.itemsListing{
+  overflow:hidden;
+  overflow-x: auto;
+  margin: 0 0 3px 0;
+  padding: 0 0 3px 0;
+}
+
+
+
+
